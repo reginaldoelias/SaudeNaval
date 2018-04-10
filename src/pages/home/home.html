@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle class="btn-toggle">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img class="logo" src="assets/imgs/logo_transp.png" width="15%" />
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let image of images">
+        <img src="{{image.src}}" (click)="openPage(image)">
+        <p (click)="openPage(image)">{{image.descricao}}</p>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+</ion-content>
+
+
+
+
+
+
+
